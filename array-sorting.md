@@ -1,4 +1,3 @@
-﻿
 # Array Sorting Exercise
 
 ## User Story
@@ -35,14 +34,13 @@ InputReader --[populates]--> ArrayOfNumbers
 
 ## Design
 
-**Class Model**
+### Class Model
 
 ![Array Sorting](https://goo.gl/VcLLT7)
 
 
 
-**Behavioural model**
-
+### Behavioral model
 ***Sequence Diagram***
 ![Array Sorting](https://goo.gl/P5KGyh)
 
