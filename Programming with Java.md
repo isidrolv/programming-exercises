@@ -1,0 +1,57 @@
+# Programming with Java
+## Introduction
+### Programming Concepts
+#### Common Terms
+#### Programming Paradigms
+##### Functional
+##### Procedural
+##### Declarative
+##### Object Oriented
+#### Programming Languages by "Paradigm Family"
+### Object Oriented Programming
+#### Definition
+#### Properties
+#### Encapsulation and Abstraction
+#### Inheritance
+#### Polymorphism
+#### Message Passing
+#### Other concepts
+##### Information Hiding
+##### Aggregation and Composition
+##### Abstract Class and Interface
+### Java Basic Concepts
+#### Class and Object in Java
+#### Variables
+#### Primitive Data Types
+#### Flow control structures
+#### Packages
+#### Naming and Conventions
+#### The JVM
+### Setting up the Environment
+## Working with Data Structures
+### Java Basic Data Structures
+#### Classes, Records, Enums
+### Java Collections
+#### Working with Lists
+#### Working with Sets
+#### Working with Maps
+#### Stacks, Queues and Trees
+### Appendix: Java Thread Programming
+## Database programming with JDBC
+### Intrudoction to Database programming in Java
+### Data Persistence
+### The DAO and JDO Patterns
+### The Java DataBase Connectivity (JDBC) API
+### Working with Connections and Statements
+### Handling ResultSets
+### Statements vs PreparedStatements
+#### Select, Insert and Update
+#### Delete
+#### Calling Stored Procedures
+### Connections and Connection Pools
+## Data Persistence with Hibernate
+## Data Persistence with JPA
+## Introduction to Java EE
+## Java Web - Working with JSP -- Web Apps
+## Java Web - Working with JSF -- Web Apps
+## Using JavaScript, CSS and HTML

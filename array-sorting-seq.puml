@@ -1,0 +1,11 @@
+@startuml
+actor User
+
+User --> ArraySortingProgram : runs
+ArraySortingProgram --> InputReader : call
+ArraySortingProgram --> ArraySorter : executes
+InputReader --> Console : read data from
+InputReader --> ArrayOfNumbers : populates
+ArraySorter --> ArrayOfNumbers : sorts data of
+
+@enduml
