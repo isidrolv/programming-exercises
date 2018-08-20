@@ -1,0 +1,34 @@
+@startuml
+
+class ArraySumProgram {
+	+ main(String[] args) : void
+}
+
+class ArraySummarizer {
+	+ sum(ArrayOfNumbers array) : int
+}
+
+class InputReader {
+	+ read(String prompt) : integer
+	+ read() : ArrayOfNumbers
+}
+
+class Console {
+	+ getNumber() : int
+	+ print(String msg) : void	
+}
+
+class ArrayOfNumbers {
+	- int[] data
+	+ ArrayOfNumbers() 
+	+ addNumber(int number) 
+	+ removeNumber(int number) 
+	+ removeNumber(int index) : int
+}
+
+ArraySumProgram --> InputReader : call
+ArraySumProgram --> ArraySummarizer : executes
+InputReader --> Console : read data from
+InputReader --> ArrayOfNumbers : populates
+ArraySummarizer --> ArrayOfNumbers : calculate sum of all values
+@enduml

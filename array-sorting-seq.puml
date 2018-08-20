@@ -1,11 +1,21 @@
 @startuml
 actor User
+participant InputReader 
 
-User --> ArraySortingProgram : runs
-ArraySortingProgram --> InputReader : call
-ArraySortingProgram --> ArraySorter : executes
-InputReader --> Console : read data from
-InputReader --> ArrayOfNumbers : populates
-ArraySorter --> ArrayOfNumbers : sorts data of
-
+User -> ArraySortingProgram : runs
+ArraySortingProgram -> InputReader : call
+activate ArraySortingProgram
+	activate InputReader
+		InputReader -> Console : read data from
+		InputReader <-- Console : returns an ArrayOfNumbers	
+		InputReader -> ArrayOfNumbers : populates
+		ArraySortingProgram <-- InputReader : result <ArrayOfNumbers>
+	deactivate InputReader
+	ArraySortingProgram -> ArraySorter : executes
+	ArraySortingProgram <-- ArraySorter : result <ArrayOfNumbers>
+	loop data.length times
+		ArraySortingProgram --> ArrayOfNumbers : get data of
+		ArraySortingProgram --> Console : print sorted data
+	end
+deactivate ArraySortingProgram
 @enduml

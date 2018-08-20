@@ -1,0 +1,23 @@
+@startuml
+
+participant ArraySumProgram 
+
+activate ArraySumProgram
+ArraySumProgram -> InputReader : call
+
+activate InputReader
+InputReader -> Console : read data from
+	loop n times
+	InputReader <-- Console : data read
+	end
+ArraySumProgram <-- InputReader : data read
+deactivate InputReader
+ArraySumProgram -> ArraySummarizer : executes sum
+ArraySummarizer -> ArrayOfNumbers : getData
+ArraySummarizer <-- ArrayOfNumbers 
+ArraySumProgram <-- ArraySummarizer
+loop data.length times 
+	ArraySumProgram -> Console : print result
+end
+deactivate ArraySumProgram
+@enduml

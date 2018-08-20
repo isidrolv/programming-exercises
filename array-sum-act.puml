@@ -1,0 +1,23 @@
+@startuml
+
+start
+:array = new int(10) ]
+
+while (console hava input data?)
+	:read data/
+	:add read number to array;
+endwhile
+
+:sum = 0
+i=0|
+while(i < size of array)  
+:sum = sum + array[i];
+:i++]
+endwhile
+
+repeat 
+	:print item of array/
+repeat while (more data?)
+
+stop
+@enduml
