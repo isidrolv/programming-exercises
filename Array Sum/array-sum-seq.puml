@@ -16,8 +16,6 @@ ArraySumProgram -> ArraySummarizer : executes sum
 ArraySummarizer -> ArrayOfNumbers : getData
 ArraySummarizer <-- ArrayOfNumbers 
 ArraySumProgram <-- ArraySummarizer
-loop data.length times 
 	ArraySumProgram -> Console : print result
-end
 deactivate ArraySumProgram
 @enduml

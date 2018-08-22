@@ -20,9 +20,7 @@ partition calculateSum {
 }
 
 partition printResults {
-	repeat 
-		:print item of array/
-	repeat while (more data?)
+	:print item of array/
 }
 
 stop

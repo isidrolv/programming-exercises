@@ -20,15 +20,17 @@ class Console {
 
 class ArrayOfNumbers {
 	- int[] data
+	- int top;
 	+ ArrayOfNumbers() 
 	+ addNumber(int number) 
 	+ removeNumber(int number) 
 	+ removeNumber(int index) : int
 }
 
-ArraySumProgram --> InputReader : call
+ArraySumProgram --> InputReader : read data using
 ArraySumProgram --> ArraySummarizer : executes
 InputReader --> Console : read data from
 InputReader --> ArrayOfNumbers : populates
 ArraySummarizer --> ArrayOfNumbers : calculate sum of all values
+ArraySumProgram --> Console : print result
 @enduml

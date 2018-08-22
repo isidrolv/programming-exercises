@@ -15,9 +15,7 @@ while(i < size of array)
 :i++]
 endwhile
 
-repeat 
-	:print item of array/
-repeat while (more data?)
+:print item of array/
 
 stop
 @enduml
